@@ -2,6 +2,7 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const { ObjectID } = require('mongodb')
 const _ = require("lodash");
+require('dotenv').config();
 
 const cors = require("cors")
 
@@ -9,10 +10,10 @@ var { mongoose } = require('./server/db/mongoose');
 var { Todo, bio } = require('./server/models/todo');
 var { User } = require('./server/models/user');
 
-const port = process.env.PORT || 4000;
+const port = process.env.PORT || 3000;
 
 
- 
+ console.log(process.env.PORT)
 
 var app = express();
 app.use(bodyParser.json());
