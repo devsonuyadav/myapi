@@ -5,9 +5,9 @@ const _ = require("lodash");
 const nodemailer = require('nodemailer');
 const cors = require("cors")
 
-var { mongoose } = require('./db/mongoose');
-var { Todo, bio } = require('./models/todo');
-var { User } = require('./models/user');
+var { mongoose } = require('./server/db/mongoose');
+var { Todo, bio } = require('./server/models/todo');
+var { User } = require('./server/models/user');
 
 const port = process.env.PORT || 8080;
 
