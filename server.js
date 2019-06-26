@@ -2,7 +2,7 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const { ObjectID } = require('mongodb')
 const _ = require("lodash");
-const nodemailer = require('nodemailer');
+
 const cors = require("cors")
 
 var { mongoose } = require('./server/db/mongoose');
