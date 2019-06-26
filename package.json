@@ -3,7 +3,7 @@
   "version": "0.3.0",
   "description": "api@sky4bcrec",
   "engines": {
-    "node": "10.x"
+    "node": "11.6.0"
   },
   "main": "server.js",
   "scripts": {
