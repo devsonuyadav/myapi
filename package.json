@@ -1,17 +1,15 @@
 {
-  "name": "todo-api",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "name": "api",
+  "version": "0.3.0",
+  "description": "api@sky4bcrec",
+  "engines": {
+    "node": "10.x"
+  },
+  "main": "server.js",
   "scripts": {
     "start": "node server.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node test.js"
   },
-  "engines": {
-    "node": "11.6.0"
-  },
-  "author": "",
-  "license": "ISC",
   "dependencies": {
     "body-parser": "^1.19.0",
     "cors": "^2.8.5",
@@ -23,6 +21,21 @@
     "mongodb": "^3.2.7",
     "mongoose": "^5.6.0",
     "nodemailer": "^6.2.1",
+    "nodemon": "^1.19.1",
     "validator": "^11.0.0"
-  }
+  },
+  "devDependencies": {
+    "request": "^2.81.0",
+    "tape": "^4.7.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sky32752/myapi.git"
+  },
+  "keywords": [
+    "node",
+    "heroku",
+    "express"
+  ],
+  "license": "MIT"
 }

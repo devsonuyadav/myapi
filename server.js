@@ -31,9 +31,6 @@ app.post('/todos', (req, res) => {
     })
 
 });
-app.get("/sky", (req, res) => {
-    res.sendFile('./budgetApp/back.png', { root: __dirname });
-});
 
 
 
@@ -73,7 +70,7 @@ app.post('/newTodo', (req, res) => {
 
 app.get('/todos', (req, res) => {
     Todo.find().then((todos) => {
-        res.send({ todos, code: '1200' })
+        res.status(404).send({ todos, code: '1200' })
     }, (e) => { res.status(400).send(e) })
 })
 
