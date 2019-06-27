@@ -2,7 +2,7 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const { ObjectID } = require('mongodb')
 const _ = require("lodash");
-require('dotenv').config();
+
 
 const cors = require("cors")
 
@@ -72,6 +72,10 @@ app.get('/todos', (req, res) => {
     Todo.find().then((todos) => {
         res.status(404).send({ todos, code: '1200' })
     }, (e) => { res.status(400).send(e) })
+})
+
+app.get('/sonu', (req, res) => {
+   res.send("WOrking")
 })
 
 app.get('/todos/:id', (req, res) => {
