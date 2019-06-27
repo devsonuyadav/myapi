@@ -6,9 +6,9 @@
     "node": "11.6.0",
     "npm" :"6.9.0"
   },
-  "main": "server.js",
+  "main": "./server/server.js",
   "scripts": {
-    "start": "node server.js",
+    "start": "node ./server/server.js",
     "test": "node test.js"
   },
   "dependencies": {
